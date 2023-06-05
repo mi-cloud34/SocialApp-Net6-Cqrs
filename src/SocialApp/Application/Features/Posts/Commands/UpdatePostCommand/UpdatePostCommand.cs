@@ -1,5 +1,4 @@
 ﻿using Application.Features.Posts.Dtos;
-using Application.Features.Posts.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
 using Core.Application.Pipelines.Authorization;
@@ -24,7 +23,7 @@ public class UpdatePostCommand : IRequest<UpdatePostDto>
         private readonly IPostRepository _postRepository;
         private readonly IMapper _mapper;
        
-        public UpdatePostCommandHandler(IPostRepository postRepository, IMapper mapper,
+        public UpdatePostCommandHandler(IPostRepository postRepository, IMapper mapper
                                         )
         {
             _postRepository = postRepository;
